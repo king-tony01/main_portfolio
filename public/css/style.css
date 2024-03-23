@@ -1,0 +1,375 @@
+:root {
+  --gradient: linear-gradient(137deg, #ffc400, #006180);
+  --primary: #f9bf00;
+  --light: #fffdce;
+  --white: #ffffff;
+  --text: #cbcbcb;
+  --title: #00f97d;
+  --li: #2aac89;
+  --icon: #a4a4a4;
+  --card-bg: #232323;
+  --main-bg: #191919;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+body {
+  background: var(--main-bg);
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/res/images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav #logo {
+    color: var(--white);
+  }
+
+  nav #logo span {
+    color: var(--primary);
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: var(--light);
+  }
+
+  .primary-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: var(--light);
+    background: var(--gradient);
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .hero h1 {
+    color: var(--white);
+    font-size: 60px;
+    max-width: 800px;
+  }
+
+  .hero p {
+    color: var(--text);
+    font-size: 20px;
+    max-width: 800px;
+    margin: 10px 0;
+  }
+
+  .buttons {
+    margin: 20px 0;
+  }
+
+  .buttons button {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .buttons #projects-ctn {
+    background: var(--gradient);
+    border-radius: 10px;
+    color: var(--light);
+  }
+
+  .buttons #download-cv {
+    border-radius: 10px;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+
+  .buttons #download-cv .fas {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  .socials-con {
+    display: flex;
+    align-items: center;
+  }
+
+  .socials-con a {
+    text-decoration: none;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    color: var(--light);
+    background: var(--gradient);
+  }
+
+  .title-main {
+    color: var(--title);
+    display: block;
+    font-size: 20px;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 35px;
+  }
+
+  .about {
+    padding: 100px 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-bg)),
+      url(/res/images/about.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+  }
+
+  .about-wrapper img {
+    width: 100%;
+  }
+
+  .about-wrapper p {
+    color: var(--white);
+    font-size: 20px;
+  }
+
+  .attributes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 50px 0;
+  }
+
+  .attri-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--card-bg);
+    transition: 0.3s all;
+  }
+
+  .attri-card:hover {
+    transform: skew(5deg);
+  }
+
+  .attri-head {
+    display: flex;
+    align-items: center;
+  }
+
+  .attri-head h3 {
+    color: var(--white);
+    margin-left: 20px;
+  }
+
+  .attri-card p {
+    color: var(--text);
+  }
+
+  .works {
+    padding: 50px;
+  }
+
+  .works-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 50px 0;
+  }
+
+  .work-card {
+    border-radius: 20px;
+    height: 350px;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  }
+
+  .work-card:nth-child(odd) {
+    grid-row: span 8;
+    height: unset;
+  }
+
+  .inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .inner h3 {
+    color: var(--white);
+  }
+
+  .inner p {
+    color: var(--icon);
+    margin: 10px 0;
+  }
+
+  .inner button {
+    margin-left: auto;
+    text-decoration: underline;
+    color: var(--primary);
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .inner button:hover {
+    text-decoration: none;
+    color: var(--title);
+  }
+
+  .works a {
+    text-decoration: none;
+  }
+}
