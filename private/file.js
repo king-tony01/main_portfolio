@@ -7,7 +7,7 @@ export function serveFile(payload, response) {
       response.writeHead(500, { "Content-Type": "application/json" });
       response.end(JSON.stringify({ message: "Internal Server error!" }));
     } else {
-      response.writeHead(200, payload.content_type);
+      response.writeHead(200, { "Content-Type": payload.content_type });
       response.end(data);
     }
   });
