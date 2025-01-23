@@ -269,6 +269,18 @@ nav ul li a {
   height: 350px;
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  overflow: hidden;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-card .twb {
+  width: 100%;
+  object-fit: cover;
 }
 
 .inner {
@@ -276,7 +288,12 @@ nav ul li a {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
 }
 
 .inner h3 {
@@ -288,9 +305,9 @@ nav ul li a {
   margin: 10px 0;
 }
 
-.inner button {
+.inner a {
   margin-left: auto;
-  text-decoration: underline;
+  text-decoration: underline !important;
   color: var(--primary);
   font-size: 16px;
   display: block;
@@ -298,7 +315,7 @@ nav ul li a {
   margin-top: 20px;
 }
 
-.inner button:hover {
+.inner a:hover {
   text-decoration: none;
   color: var(--title);
 }
